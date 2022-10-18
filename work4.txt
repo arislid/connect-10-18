@@ -1,0 +1,19 @@
+work 4 text file
+
+git add: stage에 넣어주는 명령어. 이 때 tracked 상태가 된다.
+git commit -a:  git add를 한 번이라도 했다면 git이 추척가능을 붙여 auto adding이 가능해진다.
+그런데 work4는 현재 untracked 상태이다보니 git add를 명령어를 입력해야 git commit -a 명령어가 가능해진다
+
+아니, 다 자동으로 commit 시켜주면 안될까? -> 자동으로 커밋하면 안 되는 파일이 있기 때문에 이를 구분하게 된다.
+'''
+[text]
+id: arislid
+pw: show_me_the_money
+'''
+
+요걸 자동으로 커밋한다면...? -> 시말서로 끝나지 않는다 ㅂㄷㅂㄷ
+
+git add의 의미는 다음으로 정리할 수 있다.
+1. commit 대기상태로 만들어준다.
+2. untracked -> tracked 상태로 바꿔준다.
+3. 충돌을 해결했다는 것을 git에게 보고한다.
